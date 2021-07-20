@@ -12,7 +12,7 @@ import static org.springframework.util.StringUtils.hasText;
 
 public class DynamicQueryUtils
 {
-    private DynamicQueryUtils( ) { /* 유틸 클래스는 생성자를 제공하지 않습니다. */ }
+    private DynamicQueryUtils( ) { }
     
     public static Predicate conditions(BooleanExpression... booleanExpressions)
     {
