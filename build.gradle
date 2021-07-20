@@ -1,6 +1,4 @@
 plugins {
-    id 'org.springframework.boot' version '2.5.2'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'maven-publish'
 }
@@ -16,13 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework:spring-core'
-    implementation 'com.querydsl:querydsl-jpa'
+    implementation 'org.springframework:spring-core:5.2.15.RELEASE'
+    implementation 'com.querydsl:querydsl-jpa:4.4.0'
     implementation 'com.github.jitpack:gradle-simple:1.0'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-test {
-    useJUnitPlatform( )
 }
