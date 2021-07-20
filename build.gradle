@@ -10,11 +10,15 @@ sourceCompatibility = '11'
 
 repositories {
     mavenCentral( )
+    jcenter()
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
     implementation 'org.springframework:spring-core'
     implementation 'com.querydsl:querydsl-jpa'
+    implementation 'com.github.jitpack:gradle-simple:1.0'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
