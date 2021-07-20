@@ -16,14 +16,14 @@ public class DynamicQueryUtils
     
     public static Predicate conditions(BooleanExpression... booleanExpressions)
     {
-        var condition = new BooleanBuilder( );
+        BooleanBuilder condition = new BooleanBuilder( );
         Arrays.stream(booleanExpressions).filter(Objects::nonNull).forEach(condition::and);
         return condition.getValue( );
     }
     
     public static Predicate conditions(Collection<BooleanExpression> booleanExpressions)
     {
-        var condition = new BooleanBuilder( );
+        BooleanBuilder condition = new BooleanBuilder( );
         booleanExpressions.stream( ).filter(Objects::nonNull).forEach(condition::and);
         return condition.getValue( );
     }
